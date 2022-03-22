@@ -1,4 +1,4 @@
-FROM cimg/ruby:2.7-browsers
+FROM cimg/ruby:2.7.5-browsers
 
 RUN cd /home/circleci && wget -O google-chrome-stable_current_amd64.deb -t 5 "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" \
     && (sudo dpkg -i google-chrome-stable_current_amd64.deb || sudo apt-get -fy install)  \
